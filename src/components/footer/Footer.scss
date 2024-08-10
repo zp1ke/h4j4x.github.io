@@ -1,0 +1,18 @@
+@import "../../_globalColor";
+
+.footer-text {
+  font-family: $semiBoldFont, sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  color: $subTitle !important;
+}
+
+.dark-mode {
+  color: $textColorDark !important;
+}
+
+.footer-div {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}

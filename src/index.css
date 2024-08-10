@@ -1,0 +1,65 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+/* @import "https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css"; */
+
+@font-face {
+  font-family: "Heavy Data";
+  src: local("Heavy Data"),
+    url("./assets/fonts/HeavyDataNerdFont-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Caskaydia Mono";
+  src: local("Caskaydia Mono"),
+    url("./assets/fonts/CaskaydiaMono/CaskaydiaMonoNerdFont-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Caskaydia Mono Bold";
+  src: local("Caskaydia Mono Bold"),
+    url("./assets/fonts/CaskaydiaMono/CaskaydiaMonoNerdFont-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Caskaydia Mono SemiBold";
+  src: local("Caskaydia Mono SemiBold"),
+    url("./assets/fonts/CaskaydiaMono/CaskaydiaMonoNerdFont-SemiBold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 19px / 23px "Caskaydia Mono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+
+  html,
+  body {
+    font-size: rem;
+    line-height: normal;
+  }
+}

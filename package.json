@@ -1,0 +1,55 @@
+{
+  "homepage": "https://sp1ke.dev/",
+  "name": "developer-folio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node fetch.js && react-scripts start",
+    "build": "node fetch.js && react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
+    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\"",
+    "browsers-list": "npx update-browserslist-db@latest"
+  },
+  "dependencies": {
+    "colorthief": "^2.4.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.8",
+    "gh-pages": "^6.1.1",
+    "jest-canvas-mock": "^2.5.2",
+    "lottie-react": "^2.4.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-easy-emoji": "^1.8.1",
+    "react-headroom": "^3.2.1",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "react-twitter-embed": "^4.0.4",
+    "sass": "^1.77.8"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "dotenv": "^8.2.0",
+    "prettier": "^2.3.1"
+  }
+}
