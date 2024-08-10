@@ -5,7 +5,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "dbaeumer.vscode-eslint"
+        "DavidAnson.vscode-markdownlint",
+        "dbaeumer.vscode-eslint",
+        "GitHub.vscode-github-actions"
       ]
     }
   },
