@@ -19,13 +19,23 @@
   color: $subTitle;
 }
 
+.software-skill-inline.dark-mode > i {
+  color: $subTitleDark;
+}
+
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
 .software-skill-inline > p {
   color: $subTitle;
-  font-size: 10px;
+  font-size: 12px;
 }
+
+.software-skill-inline.dark-mode > p {
+  color: $subTitleDark;
+}
+
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }

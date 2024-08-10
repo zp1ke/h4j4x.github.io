@@ -17,6 +17,10 @@
   color: $subTitle;
 }
 
+.subTitle.dark-mode {
+  color: $subTitleDark;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .achievement-heading {

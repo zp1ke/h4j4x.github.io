@@ -160,8 +160,7 @@ const educationInfo = {
       duration: "September 2008 - March 2014",
       desc: "Havana, Cuba. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Preparación teórico-práctica en Ingeniería de Software y Programación, así como en otras disciplinas como Matemática, Inteligencia Computacional y Sistemas Digitales."
       ]
     },
     {
@@ -169,11 +168,7 @@ const educationInfo = {
       logo: require("./assets/images/cujaeLogo.jpg"),
       subHeader: "MECHANiCAL ENGiNEERiNG",
       duration: "September 2000 - July 2005",
-      desc: "Havana, Cuba. Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "El ingeniero mecánico es el profesional encargado de garantizar la explotación de las máquinas, equipos e instalaciones mecánicas durante su ciclo vital."
     }
   ]
 };

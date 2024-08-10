@@ -8,6 +8,7 @@ import {
   workExperiences,
   skillsSection,
   openSource,
+  educationInfo,
   blogSection,
   talkSection,
   achievementSection,
@@ -18,6 +19,7 @@ function Header() {
   const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
+  const viewEducation = educationInfo.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
@@ -28,9 +30,9 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-          <span className="grey-color"> &lt;</span>
+          <span className={isDark ? "dark-menu grey-color" : "grey-color"}> &lt;</span>
           <span className={isDark ? "dark-menu logo-name" : "logo-name"}>{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <span className={isDark ? "dark-menu grey-color" : "grey-color"}>/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -49,6 +51,11 @@ function Header() {
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
+            </li>
+          )}
+          {viewEducation && (
+            <li>
+              <a href="#education">Education</a>
             </li>
           )}
           {viewOpenSource && (

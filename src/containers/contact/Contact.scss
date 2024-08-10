@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+.contact-detail-email.dark-mode {
+  color: $subTitleDark;
+}
+
 .contact-detail:hover,
 .contact-detail-email:hover {
   color: $textColor;

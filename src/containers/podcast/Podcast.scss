@@ -20,6 +20,10 @@
   color: $subTitle;
 }
 
+.subTitle.dark-mode {
+  color: $subTitleDark;
+}
+
 @media (max-width: 768px) {
   .podcast-header-title {
     font-size: 30px;

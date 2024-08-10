@@ -35,7 +35,13 @@
 }
 
 .grey-color {
+  font-family: $boldFont, sans-serif;
+  font-weight: bold;
   color: $subTitle;
+}
+
+.grey-color.dark-menu {
+  color: $subTitleDark;
 }
 
 .header li a {

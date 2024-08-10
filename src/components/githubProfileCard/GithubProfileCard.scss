@@ -58,6 +58,10 @@
   color: $subTitle;
 }
 
+.subTitle.dark-mode {
+  color: $subTitleDark;
+}
+
 @media (max-width: 768px) {
   .row {
     display: flex;

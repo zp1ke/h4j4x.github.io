@@ -16,6 +16,10 @@
   color: $subTitle;
 }
 
+.subTitle.dark-mode {
+  color: $subTitleDark;
+}
+
 @media (max-width: 768px) {
   .talk-header-title {
     font-size: 30px;
