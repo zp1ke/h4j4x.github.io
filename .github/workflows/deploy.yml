@@ -23,5 +23,28 @@ jobs:
           node-version: 22
       - run: npm ci
 
+      - name: Setup GH Pages
+        uses: actions/configure-pages@v5
+
       - name: Build
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "true"
         run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GH Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
