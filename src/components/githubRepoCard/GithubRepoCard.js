@@ -13,6 +13,11 @@ export default function GithubRepoCard({ repo, isDark }) {
     win.focus();
   }
 
+  const forkCount = Number(repo.node.forkCount || '0');
+  const hasForks = forkCount > 9;
+  const starsCount = Number(repo.node.stargazers.totalCount || '0');
+  const hasStars = starsCount > 9;
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div>
@@ -40,7 +45,7 @@ export default function GithubRepoCard({ repo, isDark }) {
           <p className="repo-description">{repo.node.description}</p>
           <div className="repo-stats">
             <div className="repo-left-stat">
-              {/* <span>
+              {hasForks && (<span>
                 <svg
                   aria-hidden="true"
                   className="octicon repo-star-svg"
@@ -56,8 +61,8 @@ export default function GithubRepoCard({ repo, isDark }) {
                   ></path>
                 </svg>
                 <p>{repo.node.forkCount}</p>
-              </span> */}
-              {/* <span>
+              </span>)}
+              {hasStars && (<span>
                 <svg
                   aria-hidden="true"
                   className="octicon repo-star-svg"
@@ -73,7 +78,7 @@ export default function GithubRepoCard({ repo, isDark }) {
                   ></path>
                 </svg>
                 <p>{repo.node.stargazers.totalCount}</p>
-              </span> */}
+              </span>)}
             </div>
             <div className="repo-right-stat">
               {/* <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p> */}
