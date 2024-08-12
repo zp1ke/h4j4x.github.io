@@ -1,6 +1,6 @@
 # Zp1k_e Developer Folio ⚡️
 
-[![License](https://img.shields.io/github/license/zp1ke/zp1ke.github.io)](https://github.com/zp1ke/zp1ke.github.io/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/zp1ke/zp1ke.github.io)](https://github.com/zp1ke/zp1ke.github.io/blob/main/LICENSE)
 [![Deploy](https://github.com/zp1ke/zp1ke.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/zp1ke/zp1ke.github.io/actions/workflows/deploy.yml)
 
 **[Live here](https://sp1ke.dev/)**.
