@@ -1,9 +1,9 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {Fade} from "react-reveal";
-import {formatFileSizeDisplay} from "../../utils";
+import { Fade } from "react-reveal";
+// import { formatFileSizeDisplay } from "../../utils";
 
-export default function GithubRepoCard({repo, isDark}) {
+export default function GithubRepoCard({ repo, isDark }) {
   function openUrlInNewTab(url, name) {
     if (!url) {
       console.log(`URL in ${name} is undefined`);
@@ -40,16 +40,7 @@ export default function GithubRepoCard({repo, isDark}) {
           <p className="repo-description">{repo.node.description}</p>
           <div className="repo-stats">
             <div className="repo-left-stat">
-              {repo.node.primaryLanguage !== null && (
-                <span>
-                  <div
-                    className="language-color"
-                    style={{backgroundColor: repo.node.primaryLanguage.color}}
-                  ></div>
-                  <p>{repo.node.primaryLanguage.name}</p>
-                </span>
-              )}
-              <span>
+              {/* <span>
                 <svg
                   aria-hidden="true"
                   className="octicon repo-star-svg"
@@ -65,8 +56,8 @@ export default function GithubRepoCard({repo, isDark}) {
                   ></path>
                 </svg>
                 <p>{repo.node.forkCount}</p>
-              </span>
-              <span>
+              </span> */}
+              {/* <span>
                 <svg
                   aria-hidden="true"
                   className="octicon repo-star-svg"
@@ -82,10 +73,19 @@ export default function GithubRepoCard({repo, isDark}) {
                   ></path>
                 </svg>
                 <p>{repo.node.stargazers.totalCount}</p>
-              </span>
+              </span> */}
             </div>
             <div className="repo-right-stat">
-              <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p>
+              {/* <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p> */}
+              {repo.node.primaryLanguage !== null && (
+                <span>
+                  <div
+                    className="language-color"
+                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                  ></div>
+                  <p>{repo.node.primaryLanguage.name}</p>
+                </span>
+              )}
             </div>
           </div>
         </div>
