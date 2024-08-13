@@ -55,10 +55,7 @@ const skillsSection = {
     emoji("📡🙌 Analytical Thinking, Team Player, Problem Solving"),
     emoji("🌐💻 Adaptability, Critical thinking, Communication, Self‑Motivation."),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
+  // https://www.nerdfonts.com/cheat-sheet
   softwareSkills: [
     {
       skillName: "Java",
@@ -77,7 +74,7 @@ https://fontawesome.com/icons?d=gallery */
       iconClassname: "nf nf-dev-html5"
     },
     {
-      skillName: "css3",
+      skillName: "css-3",
       iconClassname: "nf nf-dev-css3"
     },
     {
@@ -144,14 +141,17 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "PHP",
       iconClassname: "nf nf-dev-php"
     },
+    {
+      skillName: "NodeJS",
+      iconClassname: "nf nf-fa-node_js"
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// Education
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "UCI (University of Computer Sciences)",
@@ -174,7 +174,6 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
-
 const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
@@ -195,7 +194,6 @@ const techStack = {
 };
 
 // Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
@@ -218,16 +216,13 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+/* Your Open Source Section to View Your Github Pinned Projects */
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true,
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -256,12 +251,11 @@ const bigProjects = {
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Achievement Section
 // Include certificates, talks etc
-
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
@@ -317,11 +311,10 @@ const achievementSection = {
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Blogs Section
-
 const blogSection = {
   title: "Blogs",
   subtitle:
@@ -341,11 +334,10 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Talks Sections
-
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -360,29 +352,24 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Podcast Section
-
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: false // Set false to hide this section, defaults to true
+  display: false,
 };
 
 const contactInfo = {
@@ -390,17 +377,16 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "saadpasta70@gmail.com",
 };
 
 // Twitter Section
-
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false,
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false;
 
 export {
   illustration,
