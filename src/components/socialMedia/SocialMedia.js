@@ -44,6 +44,18 @@ export default function socialMedia() {
         </a>
       ) : null}
 
+      {socialMediaLinks.gravatar ? (
+        <a
+          href={socialMediaLinks.gravatar}
+          className="icon-button gravatar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="nf nf-dev-grav"></i>
+          <span></span>
+        </a>
+      ) : null}
+
       {socialMediaLinks.gmail ? (
         <a
           href={`mailto:${socialMediaLinks.gmail}`}

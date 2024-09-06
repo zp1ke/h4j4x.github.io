@@ -35,6 +35,7 @@ const socialMediaLinks = {
   github: "https://github.com/zp1ke",
   linkedin: "https://www.linkedin.com/in/zp1ke",
   leetcode: "https://leetcode.com/zp1ke",
+  gravatar: "https://gravatar.com/miche2atucha",
   googledev: "https://g.dev/zp1ke",
   // gmail: "saadpasta70@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
