@@ -44,6 +44,10 @@
   background-color: $gravatar;
 }
 
+.pluralsight i {
+  background-color: $pluralsight;
+}
+
 .github i {
   background-color: $github;
 }
@@ -84,6 +88,7 @@
 .linkedin i:hover,
 .leetcode i:hover,
 .gravatar i:hover,
+.pluralsight i:hover,
 .facebook i:hover,
 .instagram i:hover,
 .stack-overflow i:hover,

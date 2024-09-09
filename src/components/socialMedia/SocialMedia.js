@@ -39,7 +39,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="nf nf-dev-code"></i>
+          <i className="nf nf-fa-dev"></i>
           <span></span>
         </a>
       ) : null}
@@ -51,7 +51,19 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="nf nf-dev-grav"></i>
+          <i className="nf nf-md-face_man_profile"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.pluralsight ? (
+        <a
+          href={socialMediaLinks.pluralsight}
+          className="icon-button pluralsight"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="nf nf-md-school"></i>
           <span></span>
         </a>
       ) : null}
